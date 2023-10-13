@@ -54,7 +54,7 @@ class Screen():
     price = {"Attack": 150, "HP": 150, "Health": 50}
     alien_list_in_game = []
 
-    pygame.mixer.Channel(0).play(pygame.mixer.Sound("music/soundtrekmiami/10-second.ogg"))
+    pygame.mixer.Channel(0).play(pygame.mixer.Sound("music/soundtrekforfriends/ASKORBINKA.mp3"))
 
     running = True
     gamemenu = True
@@ -289,7 +289,7 @@ class Screen():
                     self.running = False
 
                 if pygame.mixer.Channel(0).get_busy() == False:
-                    pygame.mixer.Channel(0).play(pygame.mixer.Sound("music/soundtrekmiami/HM1.mp3"))
+                    pygame.mixer.Channel(0).play(pygame.mixer.Sound("music/soundtrekforfriends/IMRUSSIAN.mp3"))
 
                 if event.type == self.alien_timer and (not (self.pause)):
                     if self.BBoss.BossActiv and self.BBoss.HP > 0:
